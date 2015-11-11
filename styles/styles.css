@@ -1,0 +1,49 @@
+body{
+  font-family: 'Hind', sans-serif;
+  background-image: url("../images/background.png");
+}
+
+header {
+  height: 100px;
+  background-image: url("../images/black-linen.png");
+  border-bottom: #fff;
+  margin-bottom: 30px;
+  text-align: center;
+  color: #fff;
+
+}
+
+button {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  height: 60px;
+  width: 150px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Hind', sans-serif;
+}
+
+img {
+  width: 141.25px;
+}
+.col-md-2, .col-md-3, .col-md-9, .col-md-10 {
+  padding-right: 0;
+  padding-left: 0;
+}   
+.panel {
+  height: 275px;
+  background: transparent;
+  border: 1px solid #333;
+}
+
+.panel-default>.panel-heading{
+  background: #333;
+  color: #fff;
+}
+
+.panel-heading {
+  text-align: center;
+  font-family: 'Sigmar One', cursive;
+}
