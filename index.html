@@ -5,16 +5,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Hind:400,600' rel='stylesheet' type='text/css'>
+
   </head>
 
   <body>
    
       <header class="container-fluid">
-        <h1>Click Your Friends!</h1>
-        <p>How many times can you click in 20 seconds?</p>
-        <button class="btn btn-success">PLAY</button>
+        <h1>Click The Simpsons!</h1>
+        <p>How many times can you click in 20 seconds? Only one click per image will count!</p>
+        <button onclick="startTimer(); countClicks();" class="btn btn-success">PLAY</button>
+        <button onclick="window.location.reload();" class="btn btn-danger">START OVER</button>
       </header><!-- /.container-fluid -->
-    
+  
 
   <div class="container">
     <div class="row">
@@ -22,10 +24,12 @@
       <aside class="col-md-3">
         <div class="panel panel-default">
           <div class="panel-heading"><h4>Time Remaining</h4></div>
+          <p id="timeLine">You have:<br/><span id="time">20</span><br/> seconds left</p>
         </div>
 
         <div class="panel panel-default">
           <div class="panel-heading"><h4>Number of Clicks</h4></div>
+          <p id="clickTotal">0</p>
         </div>
 
       </aside>
@@ -33,41 +37,41 @@
       <div class="col-md-9">
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img src="images/user.png"><!--
-            --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png">
+            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/nelson.png"><!--
+            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/ralph.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/skinner.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/waylon.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/willie.png">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img src="images/user.png"><!--
-            --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png">
+            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/chief.png"><!--
+            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/apu.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/barney.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/bart.png"><!--
+             --><img onclick="javascript:countClicks();this.onclick=null;" src="images/simpsons/burns.png">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img src="images/user.png"><!--
-            --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png">
+            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/comic.png"><!--
+            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/edna.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/grandpa.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/homer.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/krusty.png">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img src="images/user.png"><!--
-            --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png"><!--
-             --><img src="images/user.png">
+            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/lisa.png"><!--
+            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/marge.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/milhouse.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/moe.png"><!--
+             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/ned.png">
           </div>
         </div>
       </div>
@@ -79,5 +83,6 @@
 
     </div>
   </div>
+  <<script src="scripts/game.js" type="text/javascript" charset="utf-8" async defer></script>
   </body>
 </html>

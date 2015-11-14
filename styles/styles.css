@@ -13,7 +13,15 @@ header {
 
 }
 
-button {
+.btn-success {
+  position: absolute;
+  top: 20px;
+  right: 190px;
+  height: 60px;
+  width: 150px;
+}
+
+.btn-danger {
   position: absolute;
   top: 20px;
   right: 20px;
@@ -21,8 +29,30 @@ button {
   width: 150px;
 }
 
+#time{
+  font-size: 90px;
+  font-weight: bolder;
+}
+
 h1, h2, h3, h4, h5, h6 {
    font-family: 'Hind', sans-serif;
+}
+
+.panel p{
+  font-family: 'Hind', sans-serif;
+  font-size: 30px;
+}
+
+#clickTotal{
+  font-size: 90px;
+  font-weight: bolder;
+  margin-top: 40px;
+
+}
+
+.change {
+  color: red;
+  padding-top: 90px;
 }
 
 img {
@@ -34,8 +64,9 @@ img {
 }   
 .panel {
   height: 275px;
-  background: transparent;
+  background: #d2eaf2;
   border: 1px solid #333;
+  text-align: center;
 }
 
 .panel-default>.panel-heading{
@@ -47,3 +78,6 @@ img {
   text-align: center;
   font-family: 'Sigmar One', cursive;
 }
+
+
+
