@@ -1,9 +1,17 @@
   var decTimer;
 
+  
+    document.getElementById("start").addEventListener("click", startTimer);
+
+  
+
+
 
   function startTimer(){
      decTimer = setInterval(myTimer, 1000);
   };
+
+  document.getElementById("start").addEventListener("click", startTimer);
 
   var secondsLeft = 20;
 
@@ -28,10 +36,10 @@
       document.getElementById("clickTotal").innerHTML = count;
     };
 
-//CHANGE ALL getElementById to getElementsByTagName & addEventListener("click".javascript/countClicks and o
+
   
   
-  // write a for loop
+ 
 
   // add data to all set to on and then after click turn to all 
   // at 0 zecond set all to off
