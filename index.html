@@ -11,13 +11,13 @@
   <body>
    
       <header class="container-fluid">
-        <h1>Click The Simpsons!</h1>
+        <img src="images/simpsons_logo.png" class="logo">
+        
         <p>How many times can you click in 20 seconds? Only one click per image will count!</p>
-        <button onclick="startTimer(); countClicks();" class="btn btn-success">PLAY</button>
-        <button onclick="window.location.reload();" class="btn btn-danger">START OVER</button>
+        <button onclick="startTimer();" class="btn btn-success">PLAY</button> <!-- into JS -->
+        <button onclick="window.location.reload();" class="btn btn-danger">START OVER</button> <!-- into JS -->
       </header><!-- /.container-fluid -->
-  
-
+      
   <div class="container">
     <div class="row">
       
@@ -37,41 +37,41 @@
       <div class="col-md-9">
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/nelson.png"><!--
-            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/ralph.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/skinner.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/waylon.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/willie.png">
+            <img data-clickable="true" class="character" src="images/simpsons/nelson.png"><!--
+            --><img data-clickable="true" class="character" src="images/simpsons/ralph.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/skinner.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/waylon.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/willie.png">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/chief.png"><!--
-            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/apu.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/barney.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/bart.png"><!--
-             --><img onclick="javascript:countClicks();this.onclick=null;" src="images/simpsons/burns.png">
+            <img data-clickable="true" class="character" src="images/simpsons/chief.png"><!--
+            --><img data-clickable="true" class="character" src="images/simpsons/apu.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/barney.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/bart.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/burns.png">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/comic.png"><!--
-            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/edna.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/grandpa.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/homer.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/krusty.png">
+            <img data-clickable="true" class="character"  src="images/simpsons/comic.png"><!--
+            --><img data-clickable="true" class="character" src="images/simpsons/edna.png"><!--
+             --><img data-clickable="true" class="character" src="images/simpsons/grandpa.png"><!--
+             --><img data-clickable="true" class="character"  src="images/simpsons/homer.png"><!--
+             --><img data-clickable="true" class="character"  src="images/simpsons/krusty.png">
           </div>
         </div>
 
         <div class="row">
           <div class="col-md-offset-2 col-md-10">
-            <img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/lisa.png"><!--
-            --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/marge.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/milhouse.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/moe.png"><!--
-             --><img onclick="javascript:countClicks(); this.onclick=null;" src="images/simpsons/ned.png">
+            <img data-clickable="true" class="character" src="images/simpsons/lisa.png"><!--
+            --><img data-clickable="true" class="character"  src="images/simpsons/marge.png"><!--
+             --><img data-clickable="true" class="character"  src="images/simpsons/milhouse.png"><!--
+             --><img data-clickable="true" class="character"  src="images/simpsons/moe.png"><!--
+             --><img data-clickable="true" class="character"  src="images/simpsons/ned.png">
           </div>
         </div>
       </div>
