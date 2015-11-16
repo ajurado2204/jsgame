@@ -1,7 +1,20 @@
+
+/*-------------------------------------
+  GLOBAL 
+-------------------------------------*/
+
 body{
   font-family: 'Hind', sans-serif;
   background-image: url("../images/background.png");
 }
+
+h1, h2, h3, h4, h5, h6 {
+   font-family: 'Hind', sans-serif;
+}
+
+/*-------------------------------------
+  HEADER
+-------------------------------------*/
 
 header {
   height: 100px;
@@ -10,7 +23,11 @@ header {
   margin-bottom: 30px;
   text-align: center;
   color: #fff;
+}
 
+.logo{
+  margin-top: 15px;
+  padding-bottom: 5px;
 }
 
 .btn-success {
@@ -29,44 +46,15 @@ header {
   width: 150px;
 }
 
-#time{
-  font-size: 90px;
-  font-weight: bolder;
-}
-
-h1, h2, h3, h4, h5, h6 {
-   font-family: 'Hind', sans-serif;
-}
+/*-------------------------------------
+  PANELS
+-------------------------------------*/
 
 .panel p{
   font-family: 'Hind', sans-serif;
   font-size: 30px;
 }
 
-#clickTotal{
-  font-size: 90px;
-  font-weight: bolder;
-  margin-top: 40px;
-
-}
-
-.logo{
-  margin-top: 15px;
-  padding-bottom: 5px;
-}
-
-.change {
-  color: red;
-  padding-top: 90px;
-}
-
-img {
-  width: 141.25px;
-}
-.col-md-2, .col-md-3, .col-md-9, .col-md-10 {
-  padding-right: 0;
-  padding-left: 0;
-}   
 .panel {
   height: 275px;
   background: #d2eaf2;
@@ -83,6 +71,41 @@ img {
   text-align: center;
   font-family: 'Sigmar One', cursive;
 }
+
+#time{
+  font-size: 90px;
+  font-weight: bolder;
+}
+
+#clickTotal{
+  font-size: 90px;
+  font-weight: bolder;
+  margin-top: 40px;
+
+}
+
+.change {
+  color: red;
+  padding-top: 90px;
+}
+
+/*-------------------------------------
+  IMAGES 
+-------------------------------------*/
+
+img {
+  width: 141.25px;
+}
+
+.clicked{
+  opacity: 0.4;
+}
+
+.col-md-2, .col-md-3, .col-md-9, .col-md-10 {
+  padding-right: 0;
+  padding-left: 0;
+}   
+
 
 
 
