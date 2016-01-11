@@ -5,7 +5,6 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="styles/styles.css">
     <link href='https://fonts.googleapis.com/css?family=Hind:400,600' rel='stylesheet' type='text/css'>
-
   </head>
 
   <body>
@@ -13,7 +12,7 @@
       <source src="themesong.mp3" type="audio/mpeg">
     </audio>
     <header class="container-fluid">
-      <img src="images/simpsons_logo.png" class="logo">
+      <img alt="Simpsons Logo" src="images/simpsons_logo.png" class="logo">
       <p>How many times can you click in 20 seconds? Only one click per image will count!</p>
       <button id="start" class="btn btn-success">PLAY</button> 
       <button id="restart" class="btn btn-danger">START OVER</button> 
@@ -39,47 +38,69 @@
           
           <div class="row">
             <div class="col-md-offset-2 col-md-10">
-              <img data-clickable="false" class="character picture" src="images/simpsons/nelson.png"><!--
-              --><img data-clickable="false" class="character picture" src="images/simpsons/ralph.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/skinner.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/waylon.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/willie.png">
+              <img alt="Nelson from Simpsons" data-clickable="false" class="character picture" src="images/simpsons/nelson.png"><!--
+              --><img alt="Ralph from Simpsons" data-clickable="false" class="character picture" src="images/simpsons/ralph.png"><!--
+               --><img alt="Skinner from Simpsons" data-clickable="false" class="character" src="images/simpsons/skinner.png"><!--
+               --><img alt="Waylon from Simpsons" data-clickable="false" class="character" src="images/simpsons/waylon.png"><!--
+               --><img alt="Willie from Simpsons" data-clickable="false" class="character" src="images/simpsons/willie.png">
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-offset-2 col-md-10">
-              <img data-clickable="false" class="character" src="images/simpsons/chief.png"><!--
-              --><img data-clickable="false" class="character" src="images/simpsons/burns.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/barney.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/bart.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/apu.png">
+              <img alt="Chief from Simpsons" data-clickable="false" class="character" src="images/simpsons/chief.png"><!--
+              --><img alt="Burns from Simpsons" data-clickable="false" class="character" src="images/simpsons/burns.png"><!--
+               --><img alt="Barney from Simpsons" data-clickable="false" class="character" src="images/simpsons/barney.png"><!--
+               --><img alt="Bart from Simpsons" data-clickable="false" class="character" src="images/simpsons/bart.png"><!--
+               --><img alt="Apu from Simpsons" data-clickable="false" class="character" src="images/simpsons/apu.png">
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-offset-2 col-md-10">
-              <img data-clickable="false" class="character"  src="images/simpsons/comic.png"><!--
-              --><img data-clickable="false" class="character" src="images/simpsons/edna.png"><!--
-               --><img data-clickable="false" class="character" src="images/simpsons/grandpa.png"><!--
-               --><img data-clickable="false" class="character"  src="images/simpsons/homer.png"><!--
-               --><img data-clickable="false" class="character"  src="images/simpsons/krusty.png">
+              <img alt="Comic from Simpsons" data-clickable="false" class="character"  src="images/simpsons/comic.png"><!--
+              --><img alt="Edna from Simpsons" data-clickable="false" class="character" src="images/simpsons/edna.png"><!--
+               --><img alt="Grandpa from Simpsons" data-clickable="false" class="character" src="images/simpsons/grandpa.png"><!--
+               --><img alt="Homer from Simpsons" data-clickable="false" class="character"  src="images/simpsons/homer.png"><!--
+               --><img alt="Krusty from Simpsons" data-clickable="false" class="character"  src="images/simpsons/krusty.png">
             </div>
           </div>
 
           <div class="row">
             <div class="col-md-offset-2 col-md-10">
-              <img data-clickable="false" class="character" src="images/simpsons/lisa.png"><!--
-              --><img data-clickable="false" class="character"  src="images/simpsons/marge.png"><!--
-               --><img data-clickable="false" class="character"  src="images/simpsons/milhouse.png"><!--
-               --><img data-clickable="false" class="character"  src="images/simpsons/moe.png"><!--
-               --><img data-clickable="false" class="character"  src="images/simpsons/ned.png">
+              <img alt="Lisa from Simpsons" data-clickable="false" class="character" src="images/simpsons/lisa.png"><!--
+              --><img alt="Marge from Simpsons" data-clickable="false" class="character"  src="images/simpsons/marge.png"><!--
+               --><img alt="Milhouse from Simpsons" data-clickable="false" class="character"  src="images/simpsons/milhouse.png"><!--
+               --><img alt="Moe from Simpsons" data-clickable="false" class="character"  src="images/simpsons/moe.png"><!--
+               --><img alt="Ned from Simpsons" data-clickable="false" class="character"  src="images/simpsons/ned.png">
             </div>
           </div>
 
         </div> <!-- End col-md-9 -->
       </div> <!-- End Main Row -->
+
+      <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-body">
+              <p id="theMessage">One fine body</p>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+          </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+      </div><!-- /.modal -->
+
+      <div class="fixedbox">
+        <span>Verified By</span>
+      </div>
+
     </div> <!-- End Main Container -->
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
     <script src="scripts/game.js" type="text/javascript" charset="utf-8" async defer></script>
   </body>
 </html>
